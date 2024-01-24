@@ -13,7 +13,7 @@ public class Car extends PoweredVehicle implements Alarm {
 
 
     public Car(int kilometers, int rpm, int torque, String make, String name, int numberOfDoors, double consumption, GearboxType gearboxType, Engine engine) {
-        super(kilometers, rpm, torque);
+        super(name, kilometers, rpm, torque);
         this.make = make;
         this.name = name;
         this.numberOfDoors = numberOfDoors;
@@ -23,7 +23,7 @@ public class Car extends PoweredVehicle implements Alarm {
     }
 
     public Car(int kilometers, int rpm, int torque, String make, String name, int numberOfDoors, double consumption, String type, FuelType fuelType) {
-        super(kilometers, rpm, torque);
+        super(name, kilometers, rpm, torque);
         this.make = make;
         this.name = name;
         this.numberOfDoors = numberOfDoors;
@@ -95,7 +95,7 @@ public class Car extends PoweredVehicle implements Alarm {
 
     @Override
     public void turnAlarmOn() {
-        System.out.println("Alarm on in car!");
+        System.out.println("Alarm on in !" + name);
     }
     @Override
     public void turnAlarmOff() {

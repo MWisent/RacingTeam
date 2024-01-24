@@ -12,7 +12,7 @@ public class Motorcycle extends PoweredVehicle implements Alarm {
 
 
     public Motorcycle(int kilometers, int rpm, int torque, String make, String name, boolean isSportMotorbike, double consumption, GearboxType gearboxType, Engine engine) {
-        super(kilometers, rpm, torque);
+        super(name, kilometers, rpm, torque);
         this.make = make;
         this.name = name;
         this.isSportMotorbike = isSportMotorbike;
@@ -22,7 +22,7 @@ public class Motorcycle extends PoweredVehicle implements Alarm {
     }
 
     public Motorcycle(int kilometers, int rpm, int torque, String make, String name, boolean isSportMotorbike, double consumption, GearboxType gearboxType, String type, FuelType fuelType) {
-        super(kilometers, rpm, torque);
+        super(name, kilometers, rpm, torque);
         this.make = make;
         this.name = name;
         this.isSportMotorbike = isSportMotorbike;
@@ -63,12 +63,12 @@ public class Motorcycle extends PoweredVehicle implements Alarm {
     }
     @Override
     public void turnAlarmOff() {
-        System.out.println("Alarm off");
+        System.out.println("Alarm off " + name);
     }
 
     @Override
     public void turnOff() {
-        System.out.println(name + "Turn off engine!");
+        System.out.println(name + "Turn off engine! " + name);
     }
 
     @Override

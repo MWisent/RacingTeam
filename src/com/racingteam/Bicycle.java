@@ -6,7 +6,8 @@ public class Bicycle extends Vehicle {
     private int numberOfGears;
     private boolean hasBasket;
 
-    public Bicycle(String make, String name, int numberOfGears, boolean hasBasket) {
+    public Bicycle(String name, String make, int numberOfGears, boolean hasBasket) {
+        super(name);
         this.make = make;
         this.name = name;
         this.numberOfGears = numberOfGears;
