@@ -2,7 +2,7 @@ package com.racingteam;
 
 import java.util.Objects;
 
-public class Motorcycle implements PoweredVehicle, Alarm {
+public class Motorcycle extends PoweredVehicle implements Alarm {
     private String make;
     private String name;
     private boolean isSportMotorbike;
@@ -10,7 +10,9 @@ public class Motorcycle implements PoweredVehicle, Alarm {
     private GearboxType gearboxType;
     private Engine engine;
 
-    public Motorcycle(String make, String name, boolean isSportMotorbike, double consumption, GearboxType gearboxType, Engine engine) {
+
+    public Motorcycle(int kilometers, int rpm, int torque, String make, String name, boolean isSportMotorbike, double consumption, GearboxType gearboxType, Engine engine) {
+        super(kilometers, rpm, torque);
         this.make = make;
         this.name = name;
         this.isSportMotorbike = isSportMotorbike;
@@ -19,7 +21,8 @@ public class Motorcycle implements PoweredVehicle, Alarm {
         this.engine = engine;
     }
 
-    public Motorcycle(String make, String name, boolean isSportMotorbike, double consumption, GearboxType gearboxType, String type, FuelType fuelType) {
+    public Motorcycle(int kilometers, int rpm, int torque, String make, String name, boolean isSportMotorbike, double consumption, GearboxType gearboxType, String type, FuelType fuelType) {
+        super(kilometers, rpm, torque);
         this.make = make;
         this.name = name;
         this.isSportMotorbike = isSportMotorbike;

@@ -6,16 +6,16 @@ public class Main {
         RacingTeam racingTeam = new RacingTeam();
 
         // Initialize the Car
-        Car car1 = new Car("Audi", "r8", 4, 7.6, GearboxType.AUTOMATIC, new Engine("Disel", FuelType.DIESEL));
-        Car car2 = new Car("BMW", "M3", 4, 9.6, GearboxType.MANUAL, new Engine("Patrol", FuelType.PATROL));
-        Motorcycle motorcycle1 = new Motorcycle(
+        Car car1 = new Car(100, 4600, 100,"Audi", "r8", 4, 7.6, GearboxType.AUTOMATIC, new Engine("Disel", FuelType.DIESEL));
+        Car car2 = new Car(100, 4600, 100,"BMW", "M3", 4, 9.6, GearboxType.MANUAL, new Engine("Patrol", FuelType.PATROL));
+        Motorcycle motorcycle1 = new Motorcycle(100, 4600, 100,
                 "Honda", "CBR1000RR-R Fireblade",
                 true, 10.0,
                 GearboxType.DCT, new Engine("Patrol",
                 FuelType.PATROL)
         );
         // Initialize the motorcycle
-        Motorcycle motorcycle2 = new Motorcycle(
+        Motorcycle motorcycle2 = new Motorcycle( 100, 4600, 100,
                 "Honda", "CMX500 Rebel",
                 true, 9.0,
                 GearboxType.CVT, new Engine("Diesel",

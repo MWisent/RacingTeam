@@ -1,6 +1,6 @@
 package com.racingteam;
 
-public class Bicycle implements Vehicle {
+public class Bicycle extends Vehicle {
     private String make;
     private String name;
     private int numberOfGears;

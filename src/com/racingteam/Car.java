@@ -3,7 +3,7 @@ package com.racingteam;
 import java.sql.SQLOutput;
 import java.util.Objects;
 
-public class Car implements PoweredVehicle, Alarm {
+public class Car extends PoweredVehicle implements Alarm {
     private String make;
     private String name;
     private int numberOfDoors;
@@ -11,7 +11,9 @@ public class Car implements PoweredVehicle, Alarm {
     private GearboxType gearboxType;
     private Engine engine;
 
-    public Car(String make, String name, int numberOfDoors, double consumption, GearboxType gearboxType, Engine engine) {
+
+    public Car(int kilometers, int rpm, int torque, String make, String name, int numberOfDoors, double consumption, GearboxType gearboxType, Engine engine) {
+        super(kilometers, rpm, torque);
         this.make = make;
         this.name = name;
         this.numberOfDoors = numberOfDoors;
@@ -20,7 +22,8 @@ public class Car implements PoweredVehicle, Alarm {
         this.engine = engine;
     }
 
-    public Car(String make, String name, int numberOfDoors, double consumption, String type, FuelType fuelType) {
+    public Car(int kilometers, int rpm, int torque, String make, String name, int numberOfDoors, double consumption, String type, FuelType fuelType) {
+        super(kilometers, rpm, torque);
         this.make = make;
         this.name = name;
         this.numberOfDoors = numberOfDoors;
