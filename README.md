@@ -40,7 +40,8 @@ Programowanie Obiektowe to paradygmat programowania, który wykorzystuje "obiekt
 
 - Środowisko Programistyczne: IntelliJ IDEA
 - Systemy Kontroli Wersji: Github
-- Język Programowania: JAVA
+- Język Programowania: Java (wersja 11 lub nowsza)
+- System Operacyjny: Kompatybilny z Windows, MacOS, Linux
 
 ## Autor
 
