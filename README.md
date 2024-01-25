@@ -1,4 +1,21 @@
-# Projekt Nauki OOP w Języku [JAVA]
+# Racing Team - Projekt Nauki OOP 🚗 🏍️
+
+Projekt "Racing Team" to interaktywne podejście do nauki podstawowych koncepcji Programowania Obiektowego (OOP), takich jak dziedziczenie, polimorfizm, enkapsulacja, oraz wykorzystanie abstrakcji i interfejsów. W ramach projektu, uczymy się poprzez tworzenie i manipulowanie różnymi typami pojazdów - od samochodów, przez motocykle, aż po rowery.
+Etapy Projektu
+
+Projekt składa się z ośmiu etapów, w których sukcesywnie rozwijamy i implementujemy różne aspekty OOP:
+
+  - **Etap 1**: Tworzenie podstawowego interfejsu Vehicle.
+  - **Etap 2**: Rozszerzenie do interfejsu PoweredVehicle.
+  - **Etap 3**: Implementacja klasy Engine z różnymi funkcjonalnościami.
+  - **Etap 4**: Budowa klasy Car, zintegrowanej z PoweredVehicle.
+  - **Etap 5**: Tworzenie klasy Motorcycle, również wykorzystującej PoweredVehicle.
+  - **Etap 6**: Definiowanie klasy Bicycle, bazującej na prostszym interfejsie Vehicle.
+  - **Etap 7**: Wprowadzenie interfejsu Alarm i jego implementacja w klasach pojazdów.
+  - **Etap 8**: Testowanie funkcjonalności z zastosowaniem polimorfizmu i ulepszenia przez wprowadzenie klas abstrakcyjnych.
+
+
+# Projekt Nauki OOP w Języku JAVA
 
 Ten projekt ma na celu praktyczne zapoznanie się z podstawowymi koncepcjami Programowania Obiektowego (OOP), takimi jak dziedziczenie, polimorfizm, enkapsulacja, abstrakcje i interfejsy.
 
@@ -21,14 +38,11 @@ Programowanie Obiektowe to paradygmat programowania, który wykorzystuje "obiekt
 
 ## Wymagania
 
-- [Wymienić wymagane oprogramowanie, np. interpreter języka, środowisko programistyczne]
-
-## Licencja
-
-Projekt jest udostępniony na licencji [Nazwa Licencji].
+- Środowisko Programistyczne: IntelliJ IDEA
+- Systemy Kontroli Wersji: Github
+- Język Programowania: JAVA
 
 ## Autor
 
-[Twój Nick lub Imię i Nazwisko]
-[Opcjonalnie: Kontakt, np. adres e-mail]
+Marcin Pełszyk
 
